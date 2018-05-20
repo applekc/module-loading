@@ -28,6 +28,7 @@ module.exports = {
     '@angular/platform-browser-dynamic': 'ng.platformBrowserDynamic',
     '@angular/http': 'ng.http',
     '@angular/forms': 'ng.forms',
+    '@angular/router': 'ng.router',
 
     'rxjs/Observable': 'Rx',
     'rxjs/Subject': 'Rx',
