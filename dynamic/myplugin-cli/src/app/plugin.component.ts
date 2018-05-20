@@ -2,11 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'myplugin',
-  template: `
-    I am a plugin!
-    I am a changed plugin :D
-
-    `
+  templateUrl: './plugin.component.html'
 })
 export class PluginComponent {
 
