@@ -6,9 +6,20 @@
     <!-- This fills the remaining space of the current row -->
     <span class="mat-toolbar-fill"></span>
 
-    <span>Right Aligned Text</span>
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>add</mat-icon>Item 1
+      </button>
+      <button mat-menu-item>
+        <mat-icon>check</mat-icon>Item 2
+      </button>
+    </mat-menu>
   </mat-toolbar>
 </header>
-<div>
+<div style="height: 900px;">
   <button mat-button>Click me!</button>
+</div>
+<div>
+  footer
 </div>
