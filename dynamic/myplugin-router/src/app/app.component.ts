@@ -7,9 +7,19 @@ import { Component, HostListener } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  navIsFixed=false;
+  
+  add(){
+    console.log('add');
+  }
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
-    console.log('test');
+    let number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    if (number > 100) {
+      this.navIsFixed = true;
+    } else if (this.navIsFixed && number < 10) {
+      this.navIsFixed = false;
+    }
    }
 }

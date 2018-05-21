@@ -1,4 +1,4 @@
-<header class="mat-elevation-z6">
+<header class="mat-elevation-z6" [class.fixed]="navIsFixed">
   <mat-toolbar color="primary">
     <mat-icon>home</mat-icon>
     <span>Application Title</span>
@@ -8,7 +8,7 @@
 
     <button mat-button [matMenuTriggerFor]="menu">Menu</button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item>
+      <button mat-menu-item (click)="add()">
         <mat-icon>add</mat-icon>Item 1
       </button>
       <button mat-menu-item>
