@@ -1,3 +1,4 @@
+@import "~ng2-dnd/bundles/style.css";
 header{
     position: fixed;
     top: 0;

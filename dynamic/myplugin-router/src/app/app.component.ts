@@ -8,6 +8,7 @@ import { Component, HostListener } from '@angular/core';
 export class AppComponent {
   title = 'app';
   navIsFixed=false;
+  listOne: Array<string> = ['Coffee', 'Orange Juice', 'Red Wine', 'Unhealty drink!', 'Water'];
   
   add(){
     console.log('add');
